@@ -1,0 +1,12 @@
+#myProjects{
+    flex: 1;
+    min-height: 20vh;
+    background-color: green;
+}
+
+#leftArrow{
+    height: 100px;
+}
+#rightArrow{
+    height: 100px;
+}

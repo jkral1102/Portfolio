@@ -1,0 +1,26 @@
+#container{
+    flex: 1;
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(255, 6, 6);
+    
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+#items{
+    flex-grow: 1;
+    background-color: yellow;
+
+
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    flex: 1;
+}
+
+
