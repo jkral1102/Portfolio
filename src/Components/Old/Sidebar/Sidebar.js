@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Container.css';
+import './Sidebar.css';
 import ProjectsImg from './projects.png';
 import Resume from './resume.png';
 import Contact from './contact.png';
@@ -20,23 +20,23 @@ class Container extends Component {
     render() {
 
         return (
-            <div id="container">
-                <div id="items"> 
+          
+                <div id="sidebarMenu"> 
                     <div className="item" onClick={this.props.projects}>
-                        <img alt="options" src={ProjectsImg} />
+                        <img className="itemImg" alt="options" src={ProjectsImg} />
                     </div>
                     <div className="item"> 
-                        <img alt="options" src={Resume} />
+                        <img className="itemImg" alt="options" src={Resume} />
                     </div>
                     <div className="item">
-                        <img alt="options" src={Contact} />
+                        <img className="itemImg" alt="options" src={Contact} />
                     </div>
                     
                     
                 </div>
 
                 
-            </div>
+           
         );
     }
 }

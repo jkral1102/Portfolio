@@ -1,0 +1,6 @@
+#footer{
+    flex: 1;
+    max-height: 10vh;
+    background-color: rgb(17, 9, 61);
+    width: 100%;
+}

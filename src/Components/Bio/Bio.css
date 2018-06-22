@@ -1,0 +1,29 @@
+/* Get rid of margin-tops: space between should work */
+#bioContainer{
+    color: white;
+    width: 50vw;
+    font-family: 'Hind Guntur', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#title{
+    flex: 1;
+    font-size: 8vh;
+    margin-top: 10vh;
+    font-family: 'Dancing Script', cursive;
+}
+
+#bio{
+    margin-top: 55px; 
+    flex: 1;
+    font-size: 1.7vh;
+
+}
+#profilePic{
+    height: 17vh;
+    border-radius: 100%;
+    margin-top: 55px; 
+}
+

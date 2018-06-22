@@ -2,4 +2,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(39, 95, 133), rgb(179, 153, 119));
+  
+
+ 
 }
