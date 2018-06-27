@@ -1,48 +1,18 @@
 /* Get rid of margin-tops: space between should work */
 #bioContainer{
+    margin-top: 10vh;
     color: white;
     width: 50vw;
     font-family: 'Hind Guntur', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#title{
-    flex: 1;
-    font-size: 10vh;
-    margin-top: 10vh;
-    font-family: 'Dancing Script', cursive;
-    display: flex;
-}
-
-#triangle{
-    flex: 1;
-}
-
-#triangleImg{
-    height: 15vh;
-    float: left;
-    margin-left: 30px;
-}
-
-#triangleImg:hover{
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
-}
-
-#name{
-    flex: 5;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-#name:hover{
-    font-style: italic;
+    align-content: center;
+    margin: 0 auto;
 }
 
 #bio{
-    margin-top: 55px; 
+    /* margin-top: 7vh; */
     flex: 1;
     font-size: 1.7vh;
 }
@@ -50,10 +20,12 @@
 #profilePic{
     height: 20vh;
     border-radius: 100%;
-    margin-top: 55px; 
+    /* margin-top: 55px;  */
+    transition: .2s;
+    border: solid 2px rgba(0,0,0,0)
 }
 
 #profilePic:hover{
-    border: solid 2px #83adef;
+    border-color:  #83adef;
 }
 

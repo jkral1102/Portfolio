@@ -1,35 +1,40 @@
-#allProjects{
-    background-color: pink 0.5;
-    display: flex;
-    flex-direction: row;
-    
-}
-
 .project{
-    height: 40vh;
-    border: 5px solid yellow;
+    /* display: flex;  */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    border: 2px solid rgb(143, 143, 87);
     flex: 1;
+    overflow-y: hidden;
+    min-width:19vw;
+    max-width: 19vw;
 }
-
-.project:hover{
-    border: 5px solid blue;
-    opacity: 0.7;
+.popup {
+    top:40px;
+    position: relative;
 }
-
-.projectImg{
-    height: 30vh;
-}
-
-.overlay{
-    opacity: 0;
+.projectContent{
+    position: relative;
+    height:180px;
+    width: 180px;
+    transition:.2s;
     margin: 0 auto;
-    border-radius: 20%;
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    
 }
-.project:hover .overlay{
-    opacity: 1;
-    
+.project:hover .projectContent{
+    height:80px; /* Changes where the popup rises to! */
 }
+.project:hover .popup{
+    top:0px;
+    background-color: rgb(80, 80, 238);
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+.popupText:hover{
+    font-weight: bold;
+}
+.projectImg{
+    height: 180px;
+    width: 180px;
+}
+

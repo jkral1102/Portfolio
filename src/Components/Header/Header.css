@@ -1,0 +1,36 @@
+#headerDiv{
+    flex: 1;
+   
+  
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    color: white;
+}
+
+#triangle{
+    flex: 1;
+}
+
+#triangleImg{
+    height: 13vh;
+    /* float: left; */
+    /* margin-left: 30px; */
+    transition: .2s;
+}
+
+#triangleImg:hover{
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+    transform-origin: 50% 64% ;
+}
+
+#name{
+    flex: 2;
+    font-size: 8vh;
+    /* margin-top: 20px;
+    margin-right: 10px; */
+}
+
+#name:hover{
+    font-weight: 600;
+}

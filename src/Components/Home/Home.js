@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import Img from './filter.png'
-import Triangle from './tri1.png'
+
 
 
 class Bio extends Component {
@@ -17,10 +17,7 @@ class Bio extends Component {
         
         return (
             <div id="bioContainer">
-                <div id='title'>
-                    <div id='triangle'><img id='triangleImg' src={Triangle} alt='ballGif'/></div>
-                    <div id='name'>Jennifer Kral</div>
-                </div>
+               
                 <div id='bio'>
                     <p>
                     Bacon ipsum dolor amet kielbasa beef ham hock, picanha shankle alcatra rump jerky venison. Tri-tip jowl bacon doner alcatra tenderloin swine. Shoulder tri-tip shankle ham hock filet mignon tongue pastrami. Short loin venison filet mignon turkey ham hock cupim spare ribs, jowl pastrami shoulder capicola.

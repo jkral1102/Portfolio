@@ -1,0 +1,84 @@
+#projectPage{
+    /* background-color: red;
+    height: 600px;
+    width: 600px;
+    position: absolute; */
+    display: flex;
+    flex-direction: row;
+    max-width: 70vw;
+    background-color: yellow;
+    max-height: 60vh;
+    min-height: 60vh;
+}
+
+#leftPageDiv{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    min-width: 40vw;
+}
+
+#projectPageName{
+    flex: 1;
+    font-size: 2em;
+    color: white;
+    border-bottom: solid 2px blue;
+}
+
+#projectPageTech{
+    flex: 1;
+    font-size: 1em;
+    color: white;
+    border-bottom: solid 2px blue; 
+}
+#projectPageInfo{
+    flex: 1;
+    font-size: 1em;
+    color: white;
+    border-bottom: solid 2px blue;
+}
+
+#projectPageLinks{
+flex: 1;
+font-size: 1em;
+color: white;
+}
+
+
+
+#rightPageDiv{
+    flex: 1;
+    min-width: 40vw;
+
+    background-color: blue;
+    overflow: auto;
+    
+}
+
+#frontPicDiv{
+ 
+ min-height: 60vh;
+}
+
+#frontPic{
+    flex: 1;
+    height: 400px;
+    width: 300px;
+    line-height: 60vh;
+    vertical-align: middle;
+}
+
+#downArrow{
+    height: 5vh;
+}
+
+#codeSnipDiv{
+   
+    overflow: auto;
+}
+
+.codeSnip{
+    height: 300px;
+    width: 200px;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import Header from './Components/Header'
 import Navbar from './Components/Navbar'
 // import Sidebar from './Components/Sidebar';
 import Home from './Components/Home'
@@ -62,7 +63,11 @@ class App extends Component {
 
 
   render() {
-    let showPortfolio = this.state.showPortfolio === true ? <Portfolio /> : null
+    let showPortfolio = this.state.showPortfolio === true ? 
+      <Portfolio 
+        clickedProject={this.clickedProject}
+        
+      /> : null
     let showHome = this.state.showHome === true ? <Home /> : null
     // let myProjects = this.state.projects = true ? <Projects /> : null 
     // // let myProjects = this.state.projects = true ? <Projects /> : null 
@@ -77,19 +82,24 @@ class App extends Component {
 
     return (
       <div className="App" style={background}>
-      
-      {showHome}
-      {showPortfolio}
-        
-        <Navbar 
+      <div id='headerContent'>
+        <Header />
+        <Navbar
           home={this.showHome}
-           portfolio={this.showPortfolio}
-           resume={this.showResume}
-           contact={this.showContact}
-           github={this.showGithub}
+          portfolio={this.showPortfolio}
+          resume={this.showResume}
+          contact={this.showContact}
+          github={this.showGithub}
         />
+        </div>
+        
+        <div id='pageContent'>
+        {showHome}
+        {showPortfolio}
+        </div>
 
-        <div><img id='backgroundImg' src={Background} alt='background'/></div>
+
+        <div id='backgroundImg'></div>
       </div>
     );
   }
