@@ -1,10 +1,11 @@
 #headerDiv{
-    flex: 1;
-   
-  
+    flex: 3;
     font-family: 'Dancing Script', cursive;
     display: flex;
     color: white;
+    justify-content: center;
+    align-content: center;
+     margin-top: 3vh;
 }
 
 #triangle{
@@ -13,8 +14,6 @@
 
 #triangleImg{
     height: 13vh;
-    /* float: left; */
-    /* margin-left: 30px; */
     transition: .2s;
 }
 
@@ -26,11 +25,13 @@
 
 #name{
     flex: 2;
-    font-size: 8vh;
-    /* margin-top: 20px;
+    font-size: 10vh;
+    color: #224e69;
+    
+   /*
     margin-right: 10px; */
 }
 
 #name:hover{
-    font-weight: 600;
+    color: #2f5d72;
 }

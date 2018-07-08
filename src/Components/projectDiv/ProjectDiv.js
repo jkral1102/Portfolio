@@ -17,14 +17,14 @@ class ProjectDiv extends Component {
 
     render() {
         return (
-            <div class='project'>
-                <div class='projectContent'>
-                    <div class='projectName'>{this.props.name}</div>
-                    <div><img class='projectImg' alt='projectImg' src={this.props.img} /></div>
+            <div className='project'>
+                <div className='projectContent'>
+                    <div className='projectName'>{this.props.name}</div>
+                    <div><img className='projectImg' alt='projectImg' src={this.props.img} /></div>
                     {/* <div>Description:  {this.props.description}</div> */}
                 </div>
-                <div class='popup'>
-                    <p class='popupText' onClick={this.projectClicked}>View</p>
+                <div className='popup'>
+                    <p className='popupText' onClick={this.projectClicked}>View</p>
                 </div>
             </div>
         );

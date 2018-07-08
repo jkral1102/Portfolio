@@ -4,8 +4,8 @@ import Header from './Components/Header'
 import Navbar from './Components/Navbar'
 // import Sidebar from './Components/Sidebar';
 import Home from './Components/Home'
-import Background from './1.png'
 import Portfolio from './Components/Portfolio'
+import Contact from './Components/Contact'
 // import Projects from './Components/Projects'
 
 
@@ -26,76 +26,60 @@ class App extends Component {
     this.state = {
       showHome: true,
       showPortfolio: false,
-      // showResume: false,
-      // showContact: false
+      showContact: false
     }
+    this.showHome = this.showHome.bind(this);
     this.showPortfolio = this.showPortfolio.bind(this);
-    //this.showBio = this.showBio.bind(this);
-    // this.showResume = this.showResume.bind(this);
-    // this.showContact = this.showContact.bind(this);
+    this.showContact = this.showContact.bind(this);
+  }
+  showHome = () => {
+    this.setState({
+      showHome: true,
+      showPortfolio: false,
+      showContact: false
+    })
   }
 
   showPortfolio = () => {
     this.setState({
-      // showPortfolio: !this.state.showPortfolio,
       showPortfolio: true,
-      showHome: false
+      showHome: false,
+      showContact: false
     })
   }
 
-  showHome = () => {
+  showContact = () => {
     this.setState({
-      showHome: true,
-      showPortfolio: false
+      showHome: false,
+      showPortfolio: false,
+      showContact: true
     })
   }
 
-  // showResume = () => {
-  //   this.setState({
-  //     showResume: !this.state.showResume
-  //   })
-  // }
-  // showContact = () => {
-  //   this.setState({
-  //     showContact: !this.state.showContact
-  //   })
-  // }
 
 
   render() {
-    let showPortfolio = this.state.showPortfolio === true ? 
-      <Portfolio 
-        clickedProject={this.clickedProject}
-        
-      /> : null
     let showHome = this.state.showHome === true ? <Home /> : null
-    // let myProjects = this.state.projects = true ? <Projects /> : null 
-    // // let myProjects = this.state.projects = true ? <Projects /> : null 
-
-    // {this.state.showResume} === true ? <Resume /> : null 
-    // {this.state.showContact} === true ? <Contact /> : null 
-
-    // <div id="sidebar">
-    // <Sidebar 
-    //  
-    // /> 
-
+    let showPortfolio = this.state.showPortfolio === true ? <Portfolio /> : null
+    let showContact = this.state.showContact === true ? <Contact /> : null
+    
     return (
       <div className="App" style={background}>
-      <div id='headerContent'>
-        <Header />
-        <Navbar
-          home={this.showHome}
-          portfolio={this.showPortfolio}
-          resume={this.showResume}
-          contact={this.showContact}
-          github={this.showGithub}
-        />
+        <div id='headerContent'>
+          <Header />
+          <Navbar
+            home={this.showHome}
+            portfolio={this.showPortfolio}
+            resume={this.showResume}
+            contact={this.showContact}
+            github={this.showGithub}
+          />
         </div>
-        
+
         <div id='pageContent'>
-        {showHome}
-        {showPortfolio}
+          {showHome}
+          {showPortfolio}
+          {showContact}
         </div>
 
 

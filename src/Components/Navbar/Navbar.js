@@ -7,11 +7,11 @@ class Navbar extends Component {
       // <img id='profilePic' src={jennifer} alt='jennifer'/>
       return (
         <div id="navbar">
-              <div onClick={this.props.home}>Home</div>
-              <div onClick={this.props.portfolio}>Projects</div>
-              <div onClick={this.props.resume}>Resume</div>
-              <div onClick={this.props.contact}> Contact </div>
-              <div onClick={this.props.github}> Github </div>
+              <div onClick={this.props.home}><span>Home</span></div>
+              <div onClick={this.props.portfolio}><span>Projects</span></div>
+              <div onClick={this.props.resume}><span>Resume</span></div>
+              <div onClick={this.props.contact}><span> Contact</span></div>
+              <div onClick={this.props.github}> <span>Github</span></div>
         </div>
     );
   }

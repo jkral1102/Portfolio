@@ -5,38 +5,45 @@
     position: absolute; */
     display: flex;
     flex-direction: row;
-    max-width: 70vw;
-    background-color: yellow;
+    max-width: 80vw;
     max-height: 60vh;
     min-height: 60vh;
+    border: solid 3px #344650;
+    
+   
+    
 }
 
 #leftPageDiv{
     flex: 1;
     display: flex;
+    
     flex-direction: column;
-    background-color: green;
+    background-color: #4b6574;
     min-width: 40vw;
+
+   
 }
 
 #projectPageName{
     flex: 1;
     font-size: 2em;
     color: white;
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px #344650;
 }
 
 #projectPageTech{
     flex: 1;
     font-size: 1em;
     color: white;
-    border-bottom: solid 2px blue; 
+    border-bottom: solid 2px #344650;
 }
 #projectPageInfo{
     flex: 1;
     font-size: 1em;
     color: white;
-    border-bottom: solid 2px blue;
+    border-bottom: solid 2px #344650;
+    
 }
 
 #projectPageLinks{
@@ -51,34 +58,55 @@ color: white;
     flex: 1;
     min-width: 40vw;
 
-    background-color: blue;
-    overflow: auto;
+    background-color: #3b5e79;
+    
     
 }
 
-#frontPicDiv{
- 
- min-height: 60vh;
-}
-
-#frontPic{
-    flex: 1;
-    height: 400px;
-    width: 300px;
-    line-height: 60vh;
-    vertical-align: middle;
-}
-
-#downArrow{
-    height: 5vh;
-}
-
-#codeSnipDiv{
+#slideshow{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+   margin-top: 8vh;
    
-    overflow: auto;
 }
 
-.codeSnip{
+
+#projectImg{
+    flex: 1;
     height: 300px;
-    width: 200px;
+    width: 300px;
+  border: solid 3px rgb(11, 32, 78);
+
+   
 }
+
+#arrow{
+    height: 5vh;
+    flex: 1;
+    padding: 50px;
+}
+
+.pagination{
+    flex: 1;
+    height: 20px;
+    max-width: 20px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    border: solid 0.7px black;
+    border-radius: 50%;
+}
+.pagination.active{
+    background-color: black;
+    transform:scale(1.5)
+}
+
+#pagination{
+    max-width: 10vw;
+    margin: 0 auto;
+    align-content: middle;
+    display: flex;
+    flex-direction: row;
+}
+
