@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './Portfolio.css';
+import './Portfolio.css'
 import ProjectDiv from '../projectDiv'
 import ProjectPage from '../projectPage'
+
 
 
 class Portfolio extends Component {
@@ -11,8 +12,8 @@ class Portfolio extends Component {
             activeProject: '',
             projects: [
                 {
-                    name: 'project1',
-                    img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
+                    name: 'React Memory Game',
+                    img: '/assets/images/memoryGame/memoryGame1.PNG',
                     info: 'this is project 1 baby',
                     technology: 'React, Javascript, shitstuff',
                     links:
@@ -24,11 +25,11 @@ class Portfolio extends Component {
                     snips:
                     [
                         {
-                            img: 'https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs',
+                            img: '/assets/images/memoryGame/memoryGame2.PNG',
                             info: 'shit bag'
                         },
                         {
-                            img: 'https://i.kinja-img.com/gawker-media/image/upload/s--7yqrHzAV--/c_scale,f_auto,fl_progressive,q_80,w_800/cyglmmz7dkhatbmzbxoq.jpg',
+                            img: '/assets/images/memoryGame/memoryGame3.PNG',
                             info: 'poop butt'
                         }
                     ],

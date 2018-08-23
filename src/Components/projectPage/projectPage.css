@@ -75,8 +75,9 @@ color: white;
 
 #projectImg{
     flex: 1;
-    height: 300px;
-    width: 300px;
+    height: 40vh;
+    max-width: 45vw;
+    margin: auto;
   border: solid 3px rgb(11, 32, 78);
 
    
