@@ -6,13 +6,13 @@ class ProjectDiv extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: this.props.name
+            id: this.props.id
         }
     }
     
     projectClicked = () => 
     {
-        this.props.display(this.props.name)
+        this.props.display(this.props.id)
     }
 
     render() {

@@ -2,21 +2,15 @@ import React, { Component } from 'react'
 import './App.css'
 import Header from './Components/Header'
 import Navbar from './Components/Navbar'
-// import Sidebar from './Components/Sidebar';
 import Home from './Components/Home'
-import Portfolio from './Components/Portfolio'
+import Projects from './Components/Projects'
 import Contact from './Components/Contact'
-// import Projects from './Components/Projects'
 
 
 
 var background = {
   width: '100vw',
-  height: "100vh",
-  // backgroundImage: `url(${Background})`, 
-  // opacity: 0.2,
-  // backgroundSize: 'cover',
-  // overflow: 'hidden',
+  height: "100vh"
 }
 
 class App extends Component {
@@ -25,24 +19,24 @@ class App extends Component {
     super();
     this.state = {
       showHome: true,
-      showPortfolio: false,
+      showProjects: false,
       showContact: false
     }
     this.showHome = this.showHome.bind(this);
-    this.showPortfolio = this.showPortfolio.bind(this);
+    this.showProjects = this.showProjects.bind(this);
     this.showContact = this.showContact.bind(this);
   }
   showHome = () => {
     this.setState({
       showHome: true,
-      showPortfolio: false,
+      showProjects: false,
       showContact: false
     })
   }
 
-  showPortfolio = () => {
+  showProjects = () => {
     this.setState({
-      showPortfolio: true,
+      showProjects: true,
       showHome: false,
       showContact: false
     })
@@ -51,7 +45,7 @@ class App extends Component {
   showContact = () => {
     this.setState({
       showHome: false,
-      showPortfolio: false,
+      showProjects: false,
       showContact: true
     })
   }
@@ -60,7 +54,7 @@ class App extends Component {
 
   render() {
     let showHome = this.state.showHome === true ? <Home /> : null
-    let showPortfolio = this.state.showPortfolio === true ? <Portfolio /> : null
+    let showProjects = this.state.showProjects === true ? <Projects /> : null
     let showContact = this.state.showContact === true ? <Contact /> : null
     
     return (
@@ -69,7 +63,7 @@ class App extends Component {
           <Header />
           <Navbar
             home={this.showHome}
-            portfolio={this.showPortfolio}
+            portfolio={this.showProjects}
             resume={this.showResume}
             contact={this.showContact}
             github={this.showGithub}
@@ -78,7 +72,7 @@ class App extends Component {
 
         <div id='pageContent'>
           {showHome}
-          {showPortfolio}
+          {showProjects}
           {showContact}
         </div>
 

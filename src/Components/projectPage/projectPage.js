@@ -78,11 +78,11 @@ class projectPage extends Component {
                         <h2>Technologies used</h2>
                         <h3>{this.state.project.technology}</h3>
                     </div>
-                    <div id='projectPageInfo'>{this.state.project.info}</div>
+                    <div id='projectPageInfo'><p>{this.state.project.info}</p></div>
                     <div id='projectPageLinks'>
                         <h3> See more! </h3>
-                        <p>{this.state.project.links.github}</p>
-                        <p>{this.state.project.links.heroku}</p>
+                        <p><a href={this.state.project.links.github}>Github</a></p>
+                        <p><a href={this.state.project.links.azure}>Hosted App</a></p>
                     </div>
                 </div>
 

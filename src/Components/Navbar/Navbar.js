@@ -4,7 +4,6 @@ import './Navbar.css';
 
 class Navbar extends Component {
     render() {
-      // <img id='profilePic' src={jennifer} alt='jennifer'/>
       return (
         <div id="navbar">
               <div onClick={this.props.home}><span>Home</span></div>

@@ -2,34 +2,27 @@ import React, { Component } from 'react';
 import './Home.css';
 import Img from './filter.png'
 
-
-
 class Bio extends Component {
     constructor() {
         super();
         this.state = {
-            
         }
     }
 
-
     render() {
-        
         return (
             <div id="bioContainer">
-               
+
                 <div id='bio'>
-                    <p>
-                    Bacon ipsum dolor amet kielbasa beef ham hock, picanha shankle alcatra rump jerky venison. Tri-tip jowl bacon doner alcatra tenderloin swine. Shoulder tri-tip shankle ham hock filet mignon tongue pastrami. Short loin venison filet mignon turkey ham hock cupim spare ribs, jowl pastrami shoulder capicola.
-                    </p>
-                    <p>
-                    Ribeye doner pig, capicola burgdoggen kielbasa ground round. Pork loin ribeye pastrami leberkas andouille pork, strip steak alcatra ground round short ribs meatball capicola spare ribs buffalo. Bresaola ball tip pancetta shankle beef ribeye. Tongue turducken strip steak salami kielbasa, rump ribeye sausage pork kevin. Pig rump pork short ribs pork belly. Biltong rump alcatra, chicken short ribs meatball ham pork loin strip steak filet mignon ground round.
-                    </p>
+                    <div><img id='profilePic' src={Img} alt='profile pic' /></div>
+                    <div>
+                        <p><strong>Hello!</strong> </p>
 
-                    <img id='profilePic' src={Img} alt='profile pic'/>
+                        <p>I am a Minneapolis-based Web Developer. I primarily incorporate the MERN stack for my web applications. However, I am always striving to incorporate new and improved technologies.</p>
+
+                        <p>I hold true to the principle that things can always be improved. Whether its by using better technologies, refactoring code, or even rethinking an entire App from the ground up.</p>
+                    </div>
                 </div>
-                
-
             </div>
         );
     }
