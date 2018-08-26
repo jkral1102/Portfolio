@@ -70,7 +70,7 @@ class projectPage extends Component {
 
         return (
             <div id='projectPage'>
-                <div id='leftPageDiv'>
+                <div id='leftContainer'>
                     <div id='projectPageName'>
                         <h1>{this.state.project.name}</h1>
                     </div>
@@ -86,7 +86,7 @@ class projectPage extends Component {
                     </div>
                 </div>
 
-                <div id='rightPageDiv'>
+                <div id='rightContainer'>
 
                     <div id='slideshow'>
                         <div><img id='arrow' alt='arrow' src={leftArrow} onClick={() => { this.imgIndex('left') }} /></div>

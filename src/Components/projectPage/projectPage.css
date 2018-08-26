@@ -4,7 +4,8 @@
     max-width: 80vw;
     max-height: 60vh;
     min-height: 60vh;
-    border: solid 3px #344650;
+    /* border: solid 3px #344650; */
+    /* background-color: #45697c; */
 }
 
 #projectPage a{
@@ -12,15 +13,16 @@
     font-weight: bold;
 }
 
-#leftPageDiv{
+#leftContainer{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #4b6574;
+    background-color: #45697c;
     min-width: 40vw;
+    border-right: solid 2px black;
 }
 
-#leftPageDiv div{
+#leftContainer div{
     align-content: center;
 }
 
@@ -47,6 +49,7 @@
 #projectPageInfo p {
     width: 50%;
     margin: auto;
+    top: 50%;
 }
 
 #projectPageLinks{
@@ -55,10 +58,11 @@
     color: white;
 }
 
-#rightPageDiv{
+#rightContainer{
     flex: 1;
     min-width: 40vw;
-    background-color: #3b5e79;
+    background-color: #45697c;
+    /* padding: 20px; */
 }
 
 #slideshow{
@@ -72,7 +76,8 @@
 #projectImg{
     flex: 1;
     height: 40vh;
-    max-width: 45vw;
+    max-width: 32vw;
+
     margin: auto;
     border: solid 3px rgb(11, 32, 78);
 }
@@ -80,7 +85,7 @@
 #arrow{
     height: 5vh;
     flex: 1;
-    padding: 50px;
+    padding: 15px;
 }
 
 .pagination{

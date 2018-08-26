@@ -39,12 +39,15 @@
 }
 
 #iconDiv{
-flex: 1;
-max-width: 140px;
-flex-wrap: wrap;
-display: flex;
-align-content: start;
+    flex: 1;
+    max-width: 140px;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: start;
+    font-size: 24px;
 }
+
+
 
 .icons{
     flex: 1;
