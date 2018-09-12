@@ -14,7 +14,10 @@ class Contact extends Component {
     }
 
     handleChange(event) {
-        this.setState({ value: event.target.value });
+        this.setState({ subject: event.target.value });
+    }
+    handleBodyChange = (event)=>{
+        this.setState({ body: event.target.value });
     }
 
     handleSubmit(event) {
@@ -29,22 +32,22 @@ class Contact extends Component {
             <div id='contactDiv'>
                 <div id='contactHeader'>Let's Talk</div>
                 <div id='contactInfo'>{this.state.contactInfo}</div>
-                <form id='contactForm' onSubmit={this.handleSubmit}>
+                <form id='contactForm' action="mailto:jkral1101@gmail.com" method="GET">
                     <label>
                         <span>name*</span>
-                        <input type="text" value={this.state.value} onChange={this.handleChange} />
+                        <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                     </label>
 
-                    <label>
+                    {/*<label>
                         <span> email*</span>
 
                         <input type="text" value={this.state.value} onChange={this.handleChange} />
-                    </label>
+                    </label>*/}
 
                     <label>
                         <span>how can i help?*</span>
 
-                        <input id='contactMsg' type="text" value={this.state.value} onChange={this.handleChange}
+                        <textarea id='contactMsg' name="body" type="text" value={this.state.body} onChange={this.handleBodyChange}
                             placeholder='What sort of project do you have in mind that I can help with?' />
                     </label>
 

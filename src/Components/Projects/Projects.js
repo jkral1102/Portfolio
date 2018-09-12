@@ -36,14 +36,13 @@ class Projects extends Component {
                 },
                 {
                     id: 2,
-                    name: 'React New York Times Search',
+                     name: 'React New York Times Search',
                     img: '/assets/images/nytSearch/nytGif.gif',
                     info: 'This project allows a user to saved and comment on articles pulled from the New York Times API.',
                     technology: 'Front end: React, Javascript, HTML/CSS. Back end: Node.js, Express.js. Database: MongoDB',
                     links:
                     {
                         github: 'https://github.com/jkral1102/NYT-React-Search',
-                        azure: 'http://www.azure.com'
                     }
                     ,
                     snips:
@@ -59,81 +58,32 @@ class Projects extends Component {
                     ],
 
                 },
-                // {
-                //     id: 3,
-                //     name: 'project3',
-                //     img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
-                //     info: 'this is project 1 baby',
-                //     technology: 'React, Javascript, shitstuff',
-                //     links:
-                //     {
-                //         github: 'http://www.github.com',
-                //         azure: 'http://www.azure.com'
-                //     }
-                //     ,
-                //     snips:
-                //     [
-                //         {
-                //             img: 'https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs',
-                //             info: 'shit bag'
-                //         },
-                //         {
-                //             img: 'https://i.kinja-img.com/gawker-media/image/upload/s--7yqrHzAV--/c_scale,f_auto,fl_progressive,q_80,w_800/cyglmmz7dkhatbmzbxoq.jpg',
-                //             info: 'poop butt'
-                //         }
-                //     ],
+                {
+                    id: 3,
+                    keywords: ['Redux', 'React.js', 'Eventful API', 'OpenWeather API', 'Bing News API', 'Node.js', 'Express.js', 'Javascript', 'HTML/CSS'],
+                    name: 'Redux/React City Dashboard',
+                    img: '/assets/images/nytSearch/nytGif.gif',
+                    info: 'This project allows a user to type in a city name and pull relevant data on weather, news haedlines, and events.',
+                    technology: 'Front end: Redux, React, Javascript, HTML/CSS. Back end: Node.js, Express.js, OpenWeather API, Bing News API, Eventful API',
+                    links:
+                    {
+                        github: 'https://github.com/jkral1102/Redux-City-Dashboard',
+                        azure: 'https://city-dashboard.azurewebsites.net'
+                    }
+                    ,
+                    snips:
+                    [
+                        {
+                            img: '/assets/images/nytSearch/nytSearch1.PNG',
+                            info: 'An ajax call is made using Axios to pull article data from the NYT API. '
+                        },
+                        {
+                            img: '/assets/images/nytSearch/nytSearch2.PNG',
+                            info: 'A javascript array map method is used to pass information as props to the Articles component, allowing it to render and use the data as needed. '
+                        }
+                    ],
 
-                // },
-                // {
-                //     id: 4,
-                //     name: 'project4',
-                //     img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
-                //     info: 'this is project 1 baby',
-                //     technology: 'React, Javascript, shitstuff',
-                //     links:
-                //     {
-                //         github: 'http://www.github.com',
-                //         azure: 'http://www.azure.com'
-                //     }
-                //     ,
-                //     snips:
-                //     [
-                //         {
-                //             img: 'https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs',
-                //             info: 'shit bag'
-                //         },
-                //         {
-                //             img: 'https://i.kinja-img.com/gawker-media/image/upload/s--7yqrHzAV--/c_scale,f_auto,fl_progressive,q_80,w_800/cyglmmz7dkhatbmzbxoq.jpg',
-                //             info: 'poop butt'
-                //         }
-                //     ],
-
-                // },
-                // {
-                //     id: 5,
-                //     name: 'project5',
-                //     img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
-                //     info: 'this is project 1 baby',
-                //     technology: 'React, Javascript, shitstuff',
-                //     links:
-                //     {
-                //         github: 'http://www.github.com',
-                //         azure: 'http://www.azure.com'
-                //     }
-                //     ,
-                //     snips:
-                //     [
-                //         {
-                //             img: 'https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/vicious_dog_0.png?itok=nsghKOHs',
-                //             info: 'shit bag'
-                //         },
-                //         {
-                //             img: 'https://i.kinja-img.com/gawker-media/image/upload/s--7yqrHzAV--/c_scale,f_auto,fl_progressive,q_80,w_800/cyglmmz7dkhatbmzbxoq.jpg',
-                //             info: 'poop butt'
-                //         }
-                //     ],
-
-                // }
+                }
             ]
         }
 
@@ -142,10 +92,10 @@ class Projects extends Component {
     }
 
     displayProject = (id) => {
-        return this.state.projects.map(item => {
-            if (item.id === id)
-                this.setState({ activeProject: item });
+        let newProject = this.state.projects.find(item => {
+            return item.id === id
         })
+        this.setState({ activeProject: newProject });
     }
 
     removeActive = () => {
@@ -154,35 +104,33 @@ class Projects extends Component {
         })
     }
 
-
+  
     render() {
         let projectDivs = this.state.projects.map((item, index) => (
-            <ProjectDiv
-                id={item.id}
-                name={item.name}
-                img={item.img}
-                description={item.description}
-                display={this.displayProject}
+                <ProjectDiv
+                    id={item.id}
+                    name={item.name}
+                    img={item.img}
+                    description={item.description}
+                    display={this.displayProject}
             />
         ))
         let projects = this.state.activeProject !== '' ?
             <ProjectPage
                 project={this.state.activeProject}
-            /> : projectDivs
+            /> :  projectDivs
 
         return (
             <div id="projects">
-                <div id='projectsHeader'>
-                
-                    <span id='projectsTitle'>Projects</span>
-                    <span id='projectsSubtitle'>Explore my web apps below</span>
-                    {/* <p>Filter<p>Javascript</p><p>React</p><p>jQuery</p></p> */}
+            <div id='projectsHeader'>
+            
+                <span id='projectsTitle'>Projects</span>
+                <span id='projectsSubtitle'>Explore my web apps below</span>
+                {/* <p>Filter<p>Javascript</p><p>React</p><p>jQuery</p></p> */}
 
-                    <div id='shortcutMenu'>
-                    
-                   
-                    <div id='iconDiv'>
-                        <div className='icons' onClick={this.removeActive}>All</div>
+                <div id='shortcutMenu'>
+                 <div id='iconDiv'>  
+                 <div className='icons' onClick={this.removeActive}>All</div>
                         <div
                             className={this.state.activeProject.id === 1 ? 'icons active ' : 'icons'}
                             onClick={() => { this.displayProject(1) }}
@@ -199,10 +147,13 @@ class Projects extends Component {
                             className={this.state.activeProject.id === 4 ? 'icons active ' : 'icons'}
                             onClick={() => { this.displayProject(4) }}
                         ><span>4</span></div>
+                       
+                    </div>
+                    </div>
 
-                    </div>
-                    </div>
                 </div>
+            
+            
 
                 <div id='projectDivs'>{projects}</div>
 

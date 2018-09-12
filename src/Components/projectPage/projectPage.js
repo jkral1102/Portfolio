@@ -6,16 +6,16 @@ import rightArrow from './arrowR.png';
 
 
 class projectPage extends Component {
+    
     constructor(props) {
         super(props);
 
-        var imgArray = [{ img: props.project.img, info: props.project.info }, ...props.project.snips];
+        
 
         this.state = {
             project: props.project,
             imgIndex: 0,
-            img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg',
-            images: imgArray
+            img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg'
         }
 
         this.imgIndex = this.imgIndex.bind(this);
@@ -67,7 +67,8 @@ class projectPage extends Component {
     }
 
     render() {
-
+        const {project} = this.props
+        let imgArray = [{ img: project.img, info: project.info }, ...project.snips]
         return (
             <div id='projectPage'>
                 <div id='leftContainer'>
@@ -90,22 +91,22 @@ class projectPage extends Component {
 
                     <div id='slideshow'>
                         <div><img id='arrow' alt='arrow' src={leftArrow} onClick={() => { this.imgIndex('left') }} /></div>
-                        <div><img id='projectImg' alt='projectImg' src={this.state.images[this.state.imgIndex].img} /></div>
+                        <div><img id='projectImg' alt='projectImg' src={imgArray[this.state.imgIndex].img} /></div>
                         <div><img id='arrow' alt='arrow' src={rightArrow} onClick={() => { this.imgIndex('right') }} /> </div>
                     </div>
 
-                    <div id='imgInfo'><p>{this.state.images[this.state.imgIndex].info}</p></div>
+                    <div id='imgInfo'><p>{imgArray[this.state.imgIndex].info}</p></div>
                     <div id='pagination'>
                         <div
-                            className={this.state.imgIndex === 0 ? 'pagination active' : 'pagination'}
+                            className={imgArray === 0 ? 'pagination active' : 'pagination'}
                             onClick={() => { this.changeImg(0) }}>
                         </div>
                         <div
-                            className={this.state.imgIndex === 1 ? 'pagination active' : 'pagination'}
+                            className={imgArray === 1 ? 'pagination active' : 'pagination'}
                             onClick={() => { this.changeImg(1) }}>
                         </div>
                         <div
-                            className={this.state.imgIndex === 2 ? 'pagination active' : 'pagination'}
+                            className={imgArray === 2 ? 'pagination active' : 'pagination'}
                             onClick={() => { this.changeImg(2) }}>
                         </div>
                     </div>
