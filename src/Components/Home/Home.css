@@ -1,7 +1,7 @@
 #bioContainer{
     margin-top: 10vh;
     color: white;
-    width: 50vw;
+    width: 70vw;
     font-family: 'Hind Guntur', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 #bio{
     margin-top: 7vh;
     flex: 1;
-    font-size: 17px;
+    font-size: 1em;
     display: flex;
     align-items: center;
 }
@@ -22,13 +22,18 @@
     flex: 1;
 }
 
+
+#homeTitle{
+    font-size: 2.2em;
+}
+
 #bio div:last-child {
     flex: 1.2;
     margin-right: 12vw;
 }
 
 #profilePic{
-    height: 20vh;
+    height: 180px;
     border-radius: 100%;
     transition: .2s;
     border: solid 2px rgba(0,0,0,0)

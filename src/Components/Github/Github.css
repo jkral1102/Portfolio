@@ -1,0 +1,15 @@
+#github{
+    width: 20vw;
+    margin: 10vh auto 0 auto;
+}
+
+#github img{
+    height: 25vh;
+    margin-top: 60px;
+}
+
+#githubTitle{
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+}

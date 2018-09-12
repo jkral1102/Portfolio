@@ -1,0 +1,17 @@
+#footer{
+    height: 8vh;
+    bottom: 0;
+    /* margin: auto 0; */
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    color: rgb(175, 174, 174);
+    line-height: 4vh;
+    vertical-align: middle;
+    font-size: 13px;
+    
+}
+
+#footer img{
+    height: 22px;
+}

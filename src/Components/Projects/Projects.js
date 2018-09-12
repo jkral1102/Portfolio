@@ -142,7 +142,7 @@ class Projects extends Component {
     }
 
     displayProject = (id) => {
-        this.state.projects.map((item, index) => {
+        return this.state.projects.map(item => {
             if (item.id === id)
                 this.setState({ activeProject: item });
         })
@@ -171,13 +171,18 @@ class Projects extends Component {
             /> : projectDivs
 
         return (
-            <div id="portfolio">
-                <div id='portfolioTitle'>
-                    <span>Projects</span>
+            <div id="projects">
+                <div id='projectsHeader'>
+                
+                    <span id='projectsTitle'>Projects</span>
+                    <span id='projectsSubtitle'>Explore my web apps below</span>
+                    {/* <p>Filter<p>Javascript</p><p>React</p><p>jQuery</p></p> */}
 
-
-                    <div id='showAll' onClick={this.removeActive}>All</div>
+                    <div id='shortcutMenu'>
+                    
+                   
                     <div id='iconDiv'>
+                        <div className='icons' onClick={this.removeActive}>All</div>
                         <div
                             className={this.state.activeProject.id === 1 ? 'icons active ' : 'icons'}
                             onClick={() => { this.displayProject(1) }}
@@ -194,22 +199,8 @@ class Projects extends Component {
                             className={this.state.activeProject.id === 4 ? 'icons active ' : 'icons'}
                             onClick={() => { this.displayProject(4) }}
                         ><span>4</span></div>
-                        <div
-                            className={this.state.activeProject.id === 5 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(5) }}
-                        ><span>5</span></div>
-                        <div
-                            className={this.state.activeProject.id === 6 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(6) }}
-                        ><span>6</span></div>
-                        <div
-                            className={this.state.activeProject.id === 7 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(7) }}
-                        ><span>7</span></div>
-                        <div
-                            className={this.state.activeProject.id === 8 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(8) }}
-                        ><span>8</span></div>
+
+                    </div>
                     </div>
                 </div>
 

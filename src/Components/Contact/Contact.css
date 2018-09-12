@@ -1,5 +1,5 @@
 #contactDiv{
-    height: 70vh;
+    /* height: 70vh; */
     width: 40vw;
     color: white;
     /* background-color: rgb(65, 97, 124); */
@@ -13,7 +13,7 @@
 
 #contactHeader{
     flex: 1;
-    font-size: 42px;
+    font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -57,7 +57,7 @@
 }
 
 #contactForm > label > #contactMsg{
-    height: 25vh;
+    height: 20vh;
     justify-content: top;
     text-transform: none;
     padding: 10px 10px;
@@ -67,6 +67,7 @@
 
 #contactSubmit{
     height: 5vh;
+    width: 100%;
     background-color: rgb(126, 45, 45);
     color: white;
     font-size: 18px;

@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: row;
     max-width: 80vw;
-    max-height: 60vh;
-    min-height: 60vh;
+    /* max-height: 60vh; */
+    /* min-height: 60vh; */
     /* border: solid 3px #344650; */
     /* background-color: #45697c; */
+    margin: auto;
+    font-size: 14px;
 }
 
 #projectPage a{
@@ -20,6 +22,7 @@
     background-color: #45697c;
     min-width: 40vw;
     border-right: solid 2px black;
+    padding: 10px;
 }
 
 #leftContainer div{
@@ -35,13 +38,13 @@
 
 #projectPageTech{
     flex: 1;
-    font-size: 1em;
+    /* font-size: 1em; */
     color: white;
     border-bottom: solid 2px #344650;
 }
 #projectPageInfo{
     flex: 1;
-    font-size: 1em;
+   
     color: white;
     border-bottom: solid 2px #344650;
     text-align: center;
@@ -54,7 +57,7 @@
 
 #projectPageLinks{
     flex: 1;
-    font-size: 1em;
+    
     color: white;
 }
 
@@ -63,6 +66,7 @@
     min-width: 40vw;
     background-color: #45697c;
     /* padding: 20px; */
+    padding: 10px;
 }
 
 #slideshow{
@@ -99,7 +103,7 @@
 }
 .pagination.active{
     background-color: black;
-    transform:scale(1.5)
+    transform:scale(1.2)
 }
 
 #pagination{

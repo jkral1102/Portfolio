@@ -5,6 +5,9 @@ import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
+import Github from './Components/Github'
+import Footer from './Components/Footer'
+
 
 
 
@@ -20,17 +23,20 @@ class App extends Component {
     this.state = {
       showHome: true,
       showProjects: false,
-      showContact: false
+      showContact: false,
+      showGithub: false
     }
     this.showHome = this.showHome.bind(this);
     this.showProjects = this.showProjects.bind(this);
     this.showContact = this.showContact.bind(this);
+    this.showGithub = this.showGithub.bind(this);
   }
   showHome = () => {
     this.setState({
       showHome: true,
       showProjects: false,
-      showContact: false
+      showContact: false,
+      showGithub: false
     })
   }
 
@@ -38,7 +44,8 @@ class App extends Component {
     this.setState({
       showProjects: true,
       showHome: false,
-      showContact: false
+      showContact: false,
+      showGithub: false
     })
   }
 
@@ -46,7 +53,17 @@ class App extends Component {
     this.setState({
       showHome: false,
       showProjects: false,
-      showContact: true
+      showContact: true,
+      showGithub: false
+    })
+  }
+
+  showGithub = () => {
+    this.setState({
+      showHome: false,
+      showProjects: false,
+      showContact: false,
+      showGithub: true
     })
   }
 
@@ -56,9 +73,11 @@ class App extends Component {
     let showHome = this.state.showHome === true ? <Home /> : null
     let showProjects = this.state.showProjects === true ? <Projects /> : null
     let showContact = this.state.showContact === true ? <Contact /> : null
+    let showGithub = this.state.showGithub === true ? <Github /> : null
+      
     
     return (
-      <div className="App" style={background}>
+      <div id="App" style={background}>
         <div id='headerContent'>
           <Header />
           <Navbar
@@ -74,8 +93,9 @@ class App extends Component {
           {showHome}
           {showProjects}
           {showContact}
+          {showGithub}
         </div>
-
+       <Footer />
 
         <div id='backgroundImg'></div>
       </div>

@@ -81,8 +81,8 @@ class projectPage extends Component {
                     <div id='projectPageInfo'><p>{this.state.project.info}</p></div>
                     <div id='projectPageLinks'>
                         <h3> See more! </h3>
-                        <p><a href={this.state.project.links.github}>Github</a></p>
-                        <p><a href={this.state.project.links.azure}>Hosted App</a></p>
+                        <p><a href={this.state.project.links.github} target="_blank" rel="noopener noreferrer">Github</a></p>
+                        <p><a href={this.state.project.links.azure} target="_blank" rel="noopener noreferrer">Hosted App</a></p>
                     </div>
                 </div>
 

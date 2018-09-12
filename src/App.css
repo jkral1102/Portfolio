@@ -1,8 +1,10 @@
-.App {
+#App {
   text-align: center;
-   min-width:1200px;
-  width:100vw;
+  min-width:1200px;
+  max-width:100vw;
   height: 100vh; 
+
+  font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
  
 }
 
@@ -15,7 +17,7 @@
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  margin-top: 14vh;
+  margin-top: 12vh;
 }
 
 
