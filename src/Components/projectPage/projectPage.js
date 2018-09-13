@@ -92,8 +92,8 @@ class projectPage extends Component {
 
                                             {item === 'Purpose' ? <p>{this.state.project.info}</p> : null}
                                             {item === 'Technology' ? <p>{this.state.project.technology}</p> : null}
-                                            {item === 'Github' ? <p>{this.state.project.links.github}</p> : null}
-                                            {item === 'View App' ? <p>{this.state.project.links.azure}</p> : null}
+                                            {item === 'Github' ? <a href={this.state.project.links.github} target="_blank">Github Project</a> : null}
+                                            {item === 'View App' ? <a href={this.state.project.links.azure} target="_blank">Hosted App</a> : null}
                                         </div>
                                     </AccordionItem>
                                 );

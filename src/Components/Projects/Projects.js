@@ -65,7 +65,7 @@ class Projects extends Component {
                     name: 'Redux/React City Dashboard',
                     img: '/assets/images/nytSearch/nytGif.gif',
                     info: 'This project allows a user to type in a city name and pull relevant data on weather, news haedlines, and events.',
-                    technology: 'Front end: Redux, React, Javascript, HTML/CSS. Back end: Node.js, Express.js, OpenWeather API, Bing News API, Eventful API',
+                    technology: 'Redux, React, Javascript, HTML/CSS, Node.js, Express.js, OpenWeather API, Bing News API, Eventful API',
                     links:
                     {
                         github: 'https://github.com/jkral1102/Redux-City-Dashboard',
