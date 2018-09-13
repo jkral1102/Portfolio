@@ -5,12 +5,12 @@
     font-size: 0.8em;
     display: flex;
     color: white;
-    cursor: pointer;
     font-weight: 700;
     text-decoration: none;
 }
 
 #navbar > div{
+    cursor: pointer;
     flex: 1;
     border-bottom: solid 4px rgba(0,0,0,0);
 }
