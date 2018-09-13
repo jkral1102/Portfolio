@@ -43,6 +43,7 @@ class Projects extends Component {
                     links:
                     {
                         github: 'https://github.com/jkral1102/NYT-React-Search',
+                        azure: 'https://nytreactsearch.azurewebsites.net/'
                     }
                     ,
                     snips:
@@ -125,7 +126,7 @@ class Projects extends Component {
             <div id='projectsHeader'>
             
                 <span id='projectsTitle'>Projects</span>
-                <span id='projectsSubtitle'>Explore my web apps below</span>
+                {/* <span id='projectsSubtitle'>Explore my web apps below</span> */}
                 {/* <p>Filter<p>Javascript</p><p>React</p><p>jQuery</p></p> */}
 
                 <div id='shortcutMenu'>

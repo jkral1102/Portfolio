@@ -2,15 +2,20 @@ import React, { Component } from 'react';
 import './projectPage.css';
 import leftArrow from './arrow.png';
 import rightArrow from './arrowR.png';
+import { Accordion, AccordionItem } from 'react-sanfona';
+//import downArrow from './down.png';
+import ImageZoom from 'react-medium-image-zoom'
+
+
 
 
 
 class projectPage extends Component {
-    
+
     constructor(props) {
         super(props);
 
-        
+
 
         this.state = {
             project: props.project,
@@ -67,23 +72,33 @@ class projectPage extends Component {
     }
 
     render() {
-        const {project} = this.props
+        const { project } = this.props
         let imgArray = [{ img: project.img, info: project.info }, ...project.snips]
         return (
             <div id='projectPage'>
                 <div id='leftContainer'>
-                    <div id='projectPageName'>
-                        <h1>{this.state.project.name}</h1>
-                    </div>
-                    <div id='projectPageTech'>
-                        <h2>Technologies used</h2>
-                        <h3>{this.state.project.technology}</h3>
-                    </div>
-                    <div id='projectPageInfo'><p>{this.state.project.info}</p></div>
-                    <div id='projectPageLinks'>
-                        <h3> See more! </h3>
-                        <p><a href={this.state.project.links.github} target="_blank" rel="noopener noreferrer">Github</a></p>
-                        <p><a href={this.state.project.links.azure} target="_blank" rel="noopener noreferrer">Hosted App</a></p>
+
+
+
+                    <div class='accordion'>
+                        <div id='projectTitle'> {this.state.project.name}</div>
+                        <Accordion className='react-sanfona'> 
+                            {/* <img src={downArrow} alt='select'/> */}
+                            {['Purpose', 'Technology', 'Github', 'View App'].map((item) => {
+                                return (
+                                    <AccordionItem className='react-sanfona-item' title={item} slug={item} key={item}>
+                                        <div class='accordionDiv'>
+                                            {/* {`Item ${ item } content`} */}
+
+                                            {item === 'Purpose' ? <p>{this.state.project.info}</p> : null}
+                                            {item === 'Technology' ? <p>{this.state.project.technology}</p> : null}
+                                            {item === 'Github' ? <p>{this.state.project.links.github}</p> : null}
+                                            {item === 'View App' ? <p>{this.state.project.links.azure}</p> : null}
+                                        </div>
+                                    </AccordionItem>
+                                );
+                            })}
+                        </Accordion>
                     </div>
                 </div>
 
@@ -91,7 +106,21 @@ class projectPage extends Component {
 
                     <div id='slideshow'>
                         <div><img id='arrow' alt='arrow' src={leftArrow} onClick={() => { this.imgIndex('left') }} /></div>
-                        <div><img id='projectImg' alt='projectImg' src={imgArray[this.state.imgIndex].img} /></div>
+                        <div>
+                            {/* <img className='projectImg' alt='projectImg' src={imgArray[this.state.imgIndex].img} /> */}
+                            <ImageZoom
+                                image={{
+                                    src: imgArray[this.state.imgIndex].img,
+                                    alt: 'projectImg',
+                                    className: 'projectImg',
+                                    style: { width: '50em' }
+                                }}
+                                zoomImage={{
+                                    src: imgArray[this.state.imgIndex].img,
+                                    alt: 'Golden Gate Bridge'
+                                }}
+                            />
+                        </div>
                         <div><img id='arrow' alt='arrow' src={rightArrow} onClick={() => { this.imgIndex('right') }} /> </div>
                     </div>
 
@@ -112,6 +141,9 @@ class projectPage extends Component {
                     </div>
 
                 </div>
+
+
+
             </div>
         );
     }

@@ -2,71 +2,25 @@
     display: flex;
     flex-direction: row;
     max-width: 80vw;
-    /* max-height: 60vh; */
-    /* min-height: 60vh; */
-    /* border: solid 3px #344650; */
-    /* background-color: #45697c; */
-    margin: auto;
-    font-size: 14px;
+    margin: 20px auto;
+    /* font-size: 14px; */
 }
 
-#projectPage a{
-    color: orange;
-    font-weight: bold;
-}
+
 
 #leftContainer{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #45697c;
-    min-width: 40vw;
-    border-right: solid 2px black;
-    padding: 10px;
 }
 
-#leftContainer div{
-    align-content: center;
-}
-
-#projectPageName{
-    flex: 1;
-    font-size: 1.2em;
-    color: white;
-    border-bottom: solid 2px #344650;
-}
-
-#projectPageTech{
-    flex: 1;
-    /* font-size: 1em; */
-    color: white;
-    border-bottom: solid 2px #344650;
-}
-#projectPageInfo{
-    flex: 1;
-   
-    color: white;
-    border-bottom: solid 2px #344650;
-    text-align: center;
-}
-#projectPageInfo p {
-    width: 50%;
-    margin: auto;
-    top: 50%;
-}
-
-#projectPageLinks{
-    flex: 1;
-    
-    color: white;
-}
 
 #rightContainer{
-    flex: 1;
-    min-width: 40vw;
-    background-color: #45697c;
-    /* padding: 20px; */
-    padding: 10px;
+    flex: 2;
+    background-color: black;
+    color: white;
+    max-height: 60vh;
+    margin-left: 50px;
 }
 
 #slideshow{
@@ -74,14 +28,13 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
-#projectImg{
+.projectImg{
     flex: 1;
     height: 40vh;
-    max-width: 32vw;
-
+    max-width: 33vw;
     margin: auto;
     border: solid 3px rgb(11, 32, 78);
 }
@@ -114,3 +67,32 @@
     flex-direction: row;
 }
 
+#collapseDiv{
+    height: 100px;
+    width: 200px;
+}
+
+#projectTitle{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.accordion{
+    /* background-color: rgba(35, 133, 199, 0.603); */
+    font-size: 1.4em;
+    color: white;
+}
+
+.accordionDiv{
+    background-color: rgb(245, 245, 245);
+    font-size: 0.7em;
+    padding: 6px;
+    margin-top: 10px;
+    color: black;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.react-sanfona-item{
+    /* border: solid 1px black; */
+    padding: 15px 0 15px 0;
+}
