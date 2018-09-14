@@ -3,7 +3,6 @@
     flex-direction: row;
     max-width: 80vw;
     margin: 20px auto;
-    /* font-size: 14px; */
 }
 
 
@@ -19,8 +18,7 @@
     flex: 2;
     background-color: black;
     color: white;
-    max-height: 60vh;
-    margin-left: 50px;
+    margin: 0 0 50px 50px;
 }
 
 #slideshow{
@@ -47,16 +45,17 @@
 
 .pagination{
     flex: 1;
-    height: 20px;
-    max-width: 20px;
+    height: 15px;
+    max-width: 15px;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
-    border: solid 0.7px black;
+    border: solid 1px blue;
     border-radius: 50%;
 }
 .pagination.active{
-    color: black;
-    transform: scale(1.2)
+    background-color: blue;
+    
+    /* transform: scale(1.2) */
 }
 
 #pagination{
@@ -93,9 +92,14 @@
     border: solid 1px black;
 }
 
+.react-sanfona-item:hover{
+    color: blue;
+}
+
 .react-sanfona-item{
     padding: 15px 0 15px 0;
 }
+
 
 .accordionTitles{
     color: pink;
@@ -113,4 +117,9 @@
 
 .fa:hover{
     color: rgb(8, 123, 199);
+}
+
+#imgInfo{
+    width: 50%;
+    margin: auto;
 }

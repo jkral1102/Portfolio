@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Img from './profilePic.png'
+import Img from './profilePic.png';
 
 class Bio extends Component {
     constructor() {
@@ -18,7 +18,7 @@ class Bio extends Component {
                     <div>
                         <span id='homeTitle'>Hello! </span>
 
-                        <p>I am a Minneapolis-based Web Developer. I primarily incorporate the MERN stack for my web applications. However, I am always striving to incorporate new and improved technologies.</p>
+                        <p>I am a Minneapolis-St. Paul based Web Developer. I primarily incorporate the MERN stack for my web applications. However, I am always striving to incorporate new and improved technologies.</p>
 
                         <p>I hold true to the principle that things can always be improved. Whether its by using better technologies, refactoring code, or even rethinking an entire App from the ground up.</p>
                     </div>

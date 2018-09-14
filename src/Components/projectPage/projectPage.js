@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './projectPage.css';
-import leftArrow from './arrow.png';
-import rightArrow from './arrowR.png';
 import { Accordion, AccordionItem } from 'react-sanfona';
-import ImageZoom from 'react-medium-image-zoom'
+import ImageZoom from 'react-medium-image-zoom';
 
 
 
@@ -130,15 +128,15 @@ class projectPage extends Component {
                     <div id='imgInfo'><p>{imgArray[this.state.imgIndex].info}</p></div>
                     <div id='pagination'>
                         <div
-                            className={imgArray === 0 ? 'pagination active' : 'pagination'}
+                            className={this.state.imgIndex === 0 ? 'pagination active' : 'pagination'}
                             onClick={() => { this.changeImg(0) }}>
                         </div>
                         <div
-                            className={imgArray === 1 ? 'pagination active' : 'pagination'}
+                            className={this.state.imgIndex === 1 ? 'pagination active' : 'pagination'}
                             onClick={() => { this.changeImg(1) }}>
                         </div>
                         <div
-                            className={imgArray === 2 ? 'pagination active' : 'pagination'}
+                            className={this.state.imgIndex === 2 ? 'pagination active' : 'pagination'}
                             onClick={() => { this.changeImg(2) }}>
                         </div>
                     </div>

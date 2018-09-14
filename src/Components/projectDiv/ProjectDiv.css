@@ -9,7 +9,7 @@
 }
 .popup {
     top:40px;
-    width: 500px; 
+    width: 33vw; 
     position: relative;
     margin: auto;
 }
@@ -38,6 +38,6 @@
     font-weight: bold;
 }
 .projectMainImg{
-    width: 500px;
+    width: 33vw;
 }
 

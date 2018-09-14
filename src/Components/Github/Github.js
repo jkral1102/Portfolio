@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import './Github.css'
+import React, { Component } from 'react';
+import './Github.css';
 
 class Github extends Component {
   render() {

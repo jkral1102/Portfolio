@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Navbar.css';
-import resumePDF from './Resume.pdf'
+import resumePDF from './Resume.pdf';
 
 
 class Navbar extends Component {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Projects.css'
-import ProjectDiv from '../projectDiv'
-import ProjectPage from '../projectPage'
+import './Projects.css';
+import ProjectDiv from '../projectDiv';
+import ProjectPage from '../projectPage';
 
 class Projects extends Component {
     constructor() {
