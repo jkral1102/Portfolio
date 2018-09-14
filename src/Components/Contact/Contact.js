@@ -6,7 +6,7 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            contactInfo: "I seek to help individuals, businesses, and organizations from around the world bring their projects to life. I'd love to help you too."
+            contactInfo: "I seek to help individuals and businesses bring their projects to life. I'd love to help you too."
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -29,6 +29,7 @@ class Contact extends Component {
     render() {
 
         return (
+            
             <div id='contactDiv'>
                 <div id='contactHeader'>Let's Talk</div>
                 <div id='contactInfo'>{this.state.contactInfo}</div>
@@ -37,12 +38,6 @@ class Contact extends Component {
                         <span>name*</span>
                         <input type="text" name="subject" value={this.state.subject} onChange={this.handleChange} />
                     </label>
-
-                    {/*<label>
-                        <span> email*</span>
-
-                        <input type="text" value={this.state.value} onChange={this.handleChange} />
-                    </label>*/}
 
                     <label>
                         <span>how can i help?*</span>

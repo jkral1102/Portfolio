@@ -3,7 +3,6 @@ import './projectPage.css';
 import leftArrow from './arrow.png';
 import rightArrow from './arrowR.png';
 import { Accordion, AccordionItem } from 'react-sanfona';
-//import downArrow from './down.png';
 import ImageZoom from 'react-medium-image-zoom'
 
 
@@ -82,7 +81,7 @@ class projectPage extends Component {
 
                     <div class='accordion'>
                         <div id='projectTitle'> {this.state.project.name}</div>
-                        <Accordion className='react-sanfona'> 
+                        <Accordion className='react-sanfona' allowMultiple='true'> 
                             {/* <img src={downArrow} alt='select'/> */}
                             {['Purpose', 'Technology', 'Github', 'View App'].map((item) => {
                                 return (
@@ -96,8 +95,11 @@ class projectPage extends Component {
                                             {item === 'View App' ? <a href={this.state.project.links.azure} target="_blank">Hosted App</a> : null}
                                         </div>
                                     </AccordionItem>
+                                   
+
                                 );
                             })}
+                           
                         </Accordion>
                     </div>
                 </div>
@@ -105,7 +107,8 @@ class projectPage extends Component {
                 <div id='rightContainer'>
 
                     <div id='slideshow'>
-                        <div><img id='arrow' alt='arrow' src={leftArrow} onClick={() => { this.imgIndex('left') }} /></div>
+                    <div class="fa fa-arrow-left" aria-hidden="true" onClick={() => { this.imgIndex('left') }} ></div>
+               
                         <div>
                             {/* <img className='projectImg' alt='projectImg' src={imgArray[this.state.imgIndex].img} /> */}
                             <ImageZoom
@@ -121,7 +124,7 @@ class projectPage extends Component {
                                 }}
                             />
                         </div>
-                        <div><img id='arrow' alt='arrow' src={rightArrow} onClick={() => { this.imgIndex('right') }} /> </div>
+                        <div class="fa fa-arrow-right" aria-hidden="true" onClick={() => { this.imgIndex('right') }} ></div>
                     </div>
 
                     <div id='imgInfo'><p>{imgArray[this.state.imgIndex].info}</p></div>

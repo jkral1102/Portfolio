@@ -1,9 +1,6 @@
 .project{
-    /* border: 2px solid rgb(143, 143, 87); */
     flex: 1;
     overflow-y: hidden;
-    /* min-width:19vw; */
-   /* width: 300px;  */
 }
 
 .projectName{
@@ -12,7 +9,7 @@
 }
 .popup {
     top:40px;
-    width: 500px;
+    width: 500px; 
     position: relative;
     margin: auto;
 }
@@ -23,7 +20,6 @@
 }
 .project:hover .projectContent{
     height: 145px; /* Changes where the popup rises to */
-
 }
 
 .project:hover .projectImg{
@@ -41,8 +37,7 @@
 .popupText:hover{
     font-weight: bold;
 }
-.projectImg{
-    height: auto;
+.projectMainImg{
     width: 500px;
 }
 

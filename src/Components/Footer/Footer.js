@@ -5,8 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div id='footer'>
-        <span>  Portfolio by Jennifer Kral </span>
-        <br/> <img src='/assets/images/react.png' alt='react'/> 
+      <span>Copyright © 2018 Jennifer Kral • Minneapolis, MN based Web Developer </span>
       </div>
     )
   }

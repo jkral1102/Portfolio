@@ -1,13 +1,9 @@
 #contactDiv{
-    /* height: 70vh; */
     width: 40vw;
     color: white;
-    /* background-color: rgb(65, 97, 124); */
-    margin: 0 auto;
-
+    margin: 15vh auto;
     display: flex;
     flex-direction: column;
-
     text-align: left;
 }
 
@@ -62,8 +58,6 @@
     text-transform: none;
     padding: 10px 10px;
 }
-
-
 
 #contactSubmit{
     height: 5vh;

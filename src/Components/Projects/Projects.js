@@ -36,7 +36,7 @@ class Projects extends Component {
                 },
                 {
                     id: 2,
-                     name: 'React New York Times Search',
+                    name: 'React New York Times Search',
                     img: '/assets/images/nytSearch/nytGif.gif',
                     info: 'This project allows a user to saved and comment on articles pulled from the New York Times API.',
                     technology: 'Front end: React, Javascript, HTML/CSS. Back end: Node.js, Express.js. Database: MongoDB',
@@ -63,7 +63,7 @@ class Projects extends Component {
                     id: 3,
                     keywords: ['Redux', 'React.js', 'Eventful API', 'OpenWeather API', 'Bing News API', 'Node.js', 'Express.js', 'Javascript', 'HTML/CSS'],
                     name: 'Redux/React City Dashboard',
-                    img: '/assets/images/nytSearch/nytGif.gif',
+                    img: '/assets/images/cityDashboard/city.gif',
                     info: 'This project allows a user to type in a city name and pull relevant data on weather, news haedlines, and events.',
                     technology: 'Redux, React, Javascript, HTML/CSS, Node.js, Express.js, OpenWeather API, Bing News API, Eventful API',
                     links:
@@ -75,11 +75,11 @@ class Projects extends Component {
                     snips:
                     [
                         {
-                            img: '/assets/images/nytSearch/nytSearch1.PNG',
+                            img: '/assets/images/cityDashboard/city1.PNG',
                             info: 'An ajax call is made using Axios to pull article data from the NYT API. '
                         },
                         {
-                            img: '/assets/images/nytSearch/nytSearch2.PNG',
+                            img: '/assets/images/cityDashboard/city2.PNG',
                             info: 'A javascript array map method is used to pass information as props to the Articles component, allowing it to render and use the data as needed. '
                         }
                     ],
@@ -105,56 +105,44 @@ class Projects extends Component {
         })
     }
 
-  
+
     render() {
         let projectDivs = this.state.projects.map((item, index) => (
-                <ProjectDiv
-                    id={item.id}
-                    name={item.name}
-                    img={item.img}
-                    description={item.description}
-                    display={this.displayProject}
+            <ProjectDiv
+                id={item.id}
+                name={item.name}
+                img={item.img}
+                description={item.description}
+                display={this.displayProject}
             />
         ))
         let projects = this.state.activeProject !== '' ?
             <ProjectPage
                 project={this.state.activeProject}
-            /> :  projectDivs
+            /> : projectDivs
 
         return (
             <div id="projects">
-            <div id='projectsHeader'>
-            
-                <span id='projectsTitle'>Projects</span>
-                {/* <span id='projectsSubtitle'>Explore my web apps below</span> */}
-                {/* <p>Filter<p>Javascript</p><p>React</p><p>jQuery</p></p> */}
-
-                <div id='shortcutMenu'>
-                 <div id='iconDiv'>  
-                 <div className='icons' onClick={this.removeActive}>All</div>
-                        <div
-                            className={this.state.activeProject.id === 1 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(1) }}
-                        ><span>1</span></div>
-                        <div
-                            className={this.state.activeProject.id === 2 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(2) }}
-                        ><span>2</span></div>
-                        <div
-                            className={this.state.activeProject.id === 3 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(3) }}
-                        ><span>3</span></div>
-                        <div
-                            className={this.state.activeProject.id === 4 ? 'icons active ' : 'icons'}
-                            onClick={() => { this.displayProject(4) }}
-                        ><span>4</span></div>
-                       
+                <div id='projectsHeader'>
+                    <span id='projectsTitle'>Projects</span>
+                    <div id='shortcutMenu'>
+                        <div id='iconDiv'>
+                            <div className='icons' onClick={this.removeActive}>All</div>
+                            <div
+                                className={this.state.activeProject.id === 1 ? 'icons active ' : 'icons'}
+                                onClick={() => { this.displayProject(1) }}
+                            ><span>1</span></div>
+                            <div
+                                className={this.state.activeProject.id === 2 ? 'icons active ' : 'icons'}
+                                onClick={() => { this.displayProject(2) }}
+                            ><span>2</span></div>
+                            <div
+                                className={this.state.activeProject.id === 3 ? 'icons active ' : 'icons'}
+                                onClick={() => { this.displayProject(3) }}
+                            ><span>3</span></div>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
-            
-            
 
                 <div id='projectDivs'>{projects}</div>
 

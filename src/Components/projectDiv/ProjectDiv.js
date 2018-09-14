@@ -20,7 +20,7 @@ class ProjectDiv extends Component {
             <div className='project'>
                 <div className='projectContent'>
                     <div className='projectName'>{this.props.name}</div>
-                    <div><img className='projectImg' alt='projectImg' src={this.props.img}/>
+                    <div><img className='projectMainImg' alt='projectImg' src={this.props.img}/>
                     </div>
                 </div>
                 <div className='popup'>

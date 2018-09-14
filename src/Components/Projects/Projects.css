@@ -1,6 +1,7 @@
 #projects{
     width: 100vw;
     color: white;
+    margin-top: 5vh;
 }
 
 #projectsHeader{
@@ -15,6 +16,7 @@
 #shortcutMenu{
     margin: auto;
     display: flex;
+    margin-top: 4vh;
 }
 
 #iconDiv{
@@ -29,9 +31,6 @@
     width: 37px;
     line-height: 37px;
     vertical-align: middle;
-    /* margin-left: 4px;
-    margin-top: 2px; */
-    /* border-radius: 10px/30px; */
     font-size: 16px;
     background-color: #4a738a;
 }
@@ -52,6 +51,6 @@
 
 #projectDivs{
     display: flex; 
-    flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 3vh;
 }

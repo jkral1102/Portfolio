@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Img from './filter.png'
+import Img from './profilePic.png'
 
 class Bio extends Component {
     constructor() {
