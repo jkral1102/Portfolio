@@ -22,16 +22,16 @@ class Projects extends Component {
                     }
                     ,
                     snips:
-                    [
-                        {
-                            img: '/assets/images/memoryGame/memoryGame2.PNG',
-                            info: 'General App.js structure. Includes the following components: Header, FriendCard, and conditional rendering of the WonGame component.'
-                        },
-                        {
-                            img: '/assets/images/memoryGame/memoryGame3.PNG',
-                            info: 'A stateless functional component is used to render the game cards (faces).'
-                        }
-                    ],
+                        [
+                            {
+                                img: '/assets/images/memoryGame/memoryGame2.PNG',
+                                info: 'General App.js structure. Includes the following components: Header, FriendCard, and conditional rendering of the WonGame component.'
+                            },
+                            {
+                                img: '/assets/images/memoryGame/memoryGame3.PNG',
+                                info: 'A stateless functional component is used to render the game cards (faces).'
+                            }
+                        ],
 
                 },
                 {
@@ -47,17 +47,16 @@ class Projects extends Component {
                     }
                     ,
                     snips:
-                    [
-                        {
-                            img: '/assets/images/nytSearch/nytSearch1.PNG',
-                            info: 'An ajax call is made using Axios to pull article data from the NYT API. '
-                        },
-                        {
-                            img: '/assets/images/nytSearch/nytSearch2.PNG',
-                            info: 'A javascript array map method is used to pass information as props to the Articles component, allowing it to render and use the data as needed. '
-                        }
-                    ],
-
+                        [
+                            {
+                                img: '/assets/images/nytSearch/nytSearch1.PNG',
+                                info: 'An ajax call is made using Axios to pull article data from the NYT API. '
+                            },
+                            {
+                                img: '/assets/images/nytSearch/nytSearch2.PNG',
+                                info: 'A javascript array map method is used to pass information as props to the Articles component, allowing it to render and use the data as needed. '
+                            }
+                        ],
                 },
                 {
                     id: 3,
@@ -73,21 +72,19 @@ class Projects extends Component {
                     }
                     ,
                     snips:
-                    [
-                        {
-                            img: '/assets/images/cityDashboard/city1.PNG',
-                            info: 'An ajax call is made using Axios to pull article data from the NYT API. '
-                        },
-                        {
-                            img: '/assets/images/cityDashboard/city2.PNG',
-                            info: 'A javascript array map method is used to pass information as props to the Articles component, allowing it to render and use the data as needed. '
-                        }
-                    ],
-
+                        [
+                            {
+                                img: '/assets/images/cityDashboard/city1.PNG',
+                                info: 'Global app data from the store is being retrieved and set to Props for component access and use'
+                            },
+                            {
+                                img: '/assets/images/cityDashboard/city2.PNG',
+                                info: 'A redux action is created to allow the client to make an api call to fetch events from the Node.js server/Express router.'
+                            }
+                        ],
                 }
             ]
         }
-
         this.displayProject = this.displayProject.bind(this);
         this.removeActive = this.removeActive.bind(this);
     }
@@ -117,34 +114,37 @@ class Projects extends Component {
             />
         ))
         let projects = this.state.activeProject !== '' ?
-            <ProjectPage
-                project={this.state.activeProject}
-            /> : projectDivs
-
-        return (
-            <div id="projects">
-                <div id='projectsHeader'>
-                    <span id='projectsTitle'>Projects</span>
-                    <div id='shortcutMenu'>
-                        <div id='iconDiv'>
-                            <div className='icons' onClick={this.removeActive}>All</div>
-                            <div
-                                className={this.state.activeProject.id === 1 ? 'icons active ' : 'icons'}
-                                onClick={() => { this.displayProject(1) }}
-                            ><span>1</span></div>
-                            <div
-                                className={this.state.activeProject.id === 2 ? 'icons active ' : 'icons'}
-                                onClick={() => { this.displayProject(2) }}
-                            ><span>2</span></div>
-                            <div
-                                className={this.state.activeProject.id === 3 ? 'icons active ' : 'icons'}
-                                onClick={() => { this.displayProject(3) }}
-                            ><span>3</span></div>
-                        </div>
+            <div>
+                <div className='shortcutMenu'>
+                    <div className='iconDiv'>
+                        <div className='icons' onClick={this.removeActive}>All</div>
+                        <div
+                            className={this.state.activeProject.id === 1 ? 'icons active ' : 'icons'}
+                            onClick={() => { this.displayProject(1) }}
+                        ><span>1</span></div>
+                        <div
+                            className={this.state.activeProject.id === 2 ? 'icons active ' : 'icons'}
+                            onClick={() => { this.displayProject(2) }}
+                        ><span>2</span></div>
+                        <div
+                            className={this.state.activeProject.id === 3 ? 'icons active ' : 'icons'}
+                            onClick={() => { this.displayProject(3) }}
+                        ><span>3</span></div>
                     </div>
                 </div>
 
-                <div id='projectDivs'>{projects}</div>
+                <ProjectPage
+                    project={this.state.activeProject}
+                />  </div> : projectDivs
+
+        return (
+            <div className="projects">
+                <div className='projectsHeader'>
+                    <span className='projectsTitle'>Projects</span>
+
+                </div>
+
+                <div className='projectDivs'>{projects}</div>
 
 
             </div>

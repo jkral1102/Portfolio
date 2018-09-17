@@ -78,7 +78,7 @@ class projectPage extends Component {
 
 
                     <div class='accordion'>
-                        <div id='projectTitle'> {this.state.project.name}</div>
+                        <div className='projectTitle'> {this.state.project.name}</div>
                         <Accordion className='react-sanfona' allowMultiple='true'> 
                             {/* <img src={downArrow} alt='select'/> */}
                             {['Purpose', 'Technology', 'Github', 'View App'].map((item) => {
@@ -105,7 +105,7 @@ class projectPage extends Component {
                 <div id='rightContainer'>
 
                     <div id='slideshow'>
-                    <div class="fa fa-arrow-left" aria-hidden="true" onClick={() => { this.imgIndex('left') }} ></div>
+                    <div className="fa fa-angle-double-left" aria-hidden="true" onClick={() => { this.imgIndex('left') }} ></div>
                
                         <div>
                             {/* <img className='projectImg' alt='projectImg' src={imgArray[this.state.imgIndex].img} /> */}
@@ -122,7 +122,7 @@ class projectPage extends Component {
                                 }}
                             />
                         </div>
-                        <div class="fa fa-arrow-right" aria-hidden="true" onClick={() => { this.imgIndex('right') }} ></div>
+                        <div className="fa fa-angle-double-right" aria-hidden="true" onClick={() => { this.imgIndex('right') }} ></div>
                     </div>
 
                     <div id='imgInfo'><p>{imgArray[this.state.imgIndex].info}</p></div>
