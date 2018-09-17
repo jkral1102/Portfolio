@@ -56,6 +56,6 @@
 .projectDivs{
     display: flex; 
 }
-.projectDivs > div {
+.projectDivs > div:not(.project) {
     margin:auto;
 }
