@@ -18,7 +18,7 @@ class Projects extends Component {
                     links:
                     {
                         github: 'https://github.com/jkral1102/React-Memory-Game/blob/master/README.md',
-                        azure: 'https://memorygamejkral-memorygame.azurewebsites.net/'
+                        azure: 'https://jenmemorygame.azurewebsites.net/'
                     }
                     ,
                     snips:
