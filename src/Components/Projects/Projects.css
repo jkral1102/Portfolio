@@ -1,11 +1,12 @@
 .projects{
     color: black;
-    margin-top: 5vh;
+    margin-top: 15vh;
 }
 
 .projectsHeader{
     display: flex;
     flex-direction: column;
+    font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
 }
 
 .projectsTitle{
@@ -55,6 +56,8 @@
 
 .projectDivs{
     display: flex; 
+    /* margin-top: 10vh; */
+    /* flex-wrap: wrap; */
 }
 .projectDivs > div:not(.project) {
     margin:auto;

@@ -12,13 +12,13 @@ class Navbar extends Component {
         </div>
 
         <div id="navMenu">
-          <div><span><a href='/' alt='home'>Home</a></span></div>
-          <div><span><a href='/projects' alt='projects'>Projects</a></span></div>
-          <div id='res' onClick={this.props.resume}>
+          <div id='navItem'><a href='/' alt='home'>Home</a></div>
+          <div id='navItem'><a href='/projects' alt='projects'>Projects</a></div>
+          {/* <div id='res' onClick={this.props.resume}>
             <a href={resumePDF} target="_blank" rel="noopener noreferrer">Resume</a>
-          </div>
-          <div><span> <a href='/contact' alt='contact'>Contact</a></span></div>
-          <div><span><a href='/github' alt='github'>Github</a></span></div>
+          </div> */}
+          <div id='navItem'> <a href='/contact' alt='contact'>Contact</a></div>
+          <div id='navItem'><a href='https://github.com/jkral1102' rel="noopener noreferrer" target="_blank" >Github</a></div>
         </div>
       </div>
     );

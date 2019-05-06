@@ -11,14 +11,14 @@ class Projects extends Component {
             projects: [
                 {
                     id: 1,
-                    name: 'React Memory Game',
+                    name: 'Memory Game (React)',
                     img: '/assets/images/memoryGame/memoryGame1.gif',
-                    info: 'This project is a game using React, Node, and Express. To win the game you must click all 12 faces without selecting any twice.',
+                    info: 'This is a game where you must click all 12 faces without selecting any twice.',
                     technology: 'React.js, Javascript, HTML/CSS',
                     links:
                     {
                         github: 'https://github.com/jkral1102/React-Memory-Game/blob/master/README.md',
-                        azure: 'https://jenmemorygame.azurewebsites.net/'
+                        azure: 'https://reactmemorygame.azurewebsites.net'
                     }
                     ,
                     snips:
@@ -36,9 +36,9 @@ class Projects extends Component {
                 },
                 {
                     id: 2,
-                    name: 'React New York Times Search',
+                    name: 'New York Times Search (React, Node, MongoDB)',
                     img: '/assets/images/nytSearch/nytGif.gif',
-                    info: 'This project allows a user to saved and comment on articles pulled from the New York Times API.',
+                    info: 'This web app allows a user to saved and comment on articles pulled from the New York Times API.',
                     technology: 'Front end: React, Javascript, HTML/CSS. Back end: Node.js, Express.js. Database: MongoDB',
                     links:
                     {
@@ -61,14 +61,14 @@ class Projects extends Component {
                 {
                     id: 3,
                     keywords: ['Redux', 'React.js', 'Eventful API', 'OpenWeather API', 'Bing News API', 'Node.js', 'Express.js', 'Javascript', 'HTML/CSS'],
-                    name: 'Redux/React City Dashboard',
+                    name: 'City Dashboard (React, Redux)',
                     img: '/assets/images/cityDashboard/city.gif',
-                    info: 'This project allows a user to type in a city name and pull relevant data on weather, news haedlines, and events.',
+                    info: 'This web app allows a user to type in a city name and pull relevant data on weather, news headlines, and local events.',
                     technology: 'Redux, React, Javascript, HTML/CSS, Node.js, Express.js, OpenWeather API, Bing News API, Eventful API',
                     links:
                     {
                         github: 'https://github.com/jkral1102/Redux-City-Dashboard',
-                        azure: 'https://city-dashboard.azurewebsites.net'
+                        azure: 'https://citydashboard.azurewebsites.net'
                     }
                     ,
                     snips:
@@ -79,9 +79,35 @@ class Projects extends Component {
                             },
                             {
                                 img: '/assets/images/cityDashboard/city2.PNG',
-                                info: 'A redux action is created to allow the client to make an api call to fetch events from the Node.js server/Express router.'
+                                info: 'A redux action is created to make an api call that fetches events from the database.'
                             }
                         ],
+                },
+                {
+                    id: 4,
+                    keywords: ['Javascript', 'jQuery', 'HTML/CSS', 'Sequelize', 'Postgresql', 'Google Location API', 'Yelp API', 'Node.js/Express'],
+                    name: 'LunchLotto (Javascript, jQuery)',
+                    img: '/assets/images/lunchlotto/lotto.PNG',
+                    info: 'This app allows you to form a group where members can add restaurant suggestions and it selects a random restaurant.',
+                    technology: 'Javascript, jQuery, HTML/CSS, Sequelize, Node.js, Express.js, Postgresql, Google Location API, Yelp API',
+                    links:
+                    {
+                        github: 'https://github.com/jkral1102/LunchLotto.git',
+                        azure: 'https://lunchlottojkral.herokuapp.com/'
+                    }
+                    ,
+                    snips:
+                        [
+                            {
+                                img: '/assets/images/cityDashboard/city1.PNG',
+                                info: 'Global app data from the store is being retrieved and set to Props for component access and use'
+                            },
+                            {
+                                img: '/assets/images/cityDashboard/city2.PNG',
+                                info: 'A redux action is created to make an api call that fetches events from the database.'
+                            }
+                        ],
+                
                 }
             ]
         }

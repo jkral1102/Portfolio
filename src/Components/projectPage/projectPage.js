@@ -16,8 +16,7 @@ class projectPage extends Component {
 
         this.state = {
             project: props.project,
-            imgIndex: 0,
-            img: 'https://www.what-dog.net/Images/faces2/scroll0015.jpg'
+            imgIndex: 0
         }
 
         this.imgIndex = this.imgIndex.bind(this);
@@ -77,28 +76,25 @@ class projectPage extends Component {
 
 
 
-                    <div class='accordion'>
+                    <div className='accordion'>
                         <div className='projectTitle'> {this.state.project.name}</div>
-                        <Accordion className='react-sanfona' allowMultiple='true'> 
-                            {/* <img src={downArrow} alt='select'/> */}
+                        <div> 
                             {['Purpose', 'Technology', 'Github', 'View App'].map((item) => {
                                 return (
-                                    <AccordionItem className='react-sanfona-item' title={item} slug={item} key={item}>
-                                        <div class='accordionDiv'>
-                                            {/* {`Item ${ item } content`} */}
-
-                                            {item === 'Purpose' ? <p>{this.state.project.info}</p> : null}
-                                            {item === 'Technology' ? <p>{this.state.project.technology}</p> : null}
+                                    <div title={item} slug={item} key={item}>
+                                        <div className='accordionDiv'>
+                                            {item === 'Purpose' ? <p>Purpose: {this.state.project.info}</p> : null}
+                                            {item === 'Technology' ? <p>Stack: {this.state.project.technology}</p> : null}
                                             {item === 'Github' ? <a href={this.state.project.links.github} target="_blank">Github Project</a> : null}
                                             {item === 'View App' ? <a href={this.state.project.links.azure} target="_blank">Hosted App</a> : null}
                                         </div>
-                                    </AccordionItem>
+                                    </div>
                                    
 
                                 );
                             })}
                            
-                        </Accordion>
+                        </div>
                     </div>
                 </div>
 
@@ -112,7 +108,7 @@ class projectPage extends Component {
                             <ImageZoom
                                 image={{
                                     src: imgArray[this.state.imgIndex].img,
-                                    alt: 'projectImg',
+                                    alt: 'project',
                                     className: 'projectImg',
                                     style: { width: '50em' }
                                 }}

@@ -9,17 +9,18 @@
 }
 .popup {
     top:40px;
-    width: 33vw; 
+    width: 20vw; 
     position: relative;
     margin: auto;
 }
 .projectContent{
     position: relative;
-    transition:.2s;
-    margin: 15vh auto;
+    transition:.5s;
+    margin: auto;
 }
+
 .project:hover .projectContent{
-    height: 5vh; /* Changes where the popup rises to */
+    height: 10vh; /* Changes where the popup rises to */
 }
 
 .project:hover .projectImg{
@@ -32,7 +33,7 @@
     height: 65px;
     line-height: 65px;
     color: white;
-    font-size: 27px;
+    font-size: 25px;
 }
 
 .popupText:hover{
@@ -40,6 +41,6 @@
     color: #3e89b7;
 }
 .projectMainImg{
-    width: 33vw;
+    width: 20vw;
 }
 
