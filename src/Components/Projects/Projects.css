@@ -1,64 +1,41 @@
-.projects{
-    color: black;
-    margin-top: 15vh;
-}
-
-.projectsHeader{
+#wrapper{
+    margin: auto;
+    align-content: center;
+    justify-content: middle;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
+    background-color: rgba(46, 46, 46, 0.788);
+    color: white;
 }
 
-.projectsTitle{
-    font-size: 3em;
-}
-
-.shortcutMenu{
-    margin: auto;
+.projects{
+    margin: 50px auto;
     display: flex;
-    margin-top: 4vh;
+    background-color: rgb(24, 24, 24);
 }
 
-.iconDiv{
-    flex: 1;
-    display: flex;
-    margin:auto;
-    max-width:200px;
+.projectImg {
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+   margin: 50px;
+
 }
 
-.icons{
-    flex: 1;
-    border: solid 1px black;
-    height: 20px;
-    max-width: 37px;
-    border-radius: 5px;
-    margin: 5px;
-    line-height: 20px;
-    vertical-align: middle;
-    font-size: 12px;
-    background-color: #3e89b7;
+.projectImg:hover {
+    opacity: 0.6;
 }
 
-.icons:hover{
-    background-color: white;
-    color: black;
+/* .hoverText {
+    visibility: hidden;
+    opacity: 0;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
 }
 
-.icons.active{
-    background-color: rgb(56, 54, 54);
-    color:white;
-}
-
-.icons.active:hover{
-    color: black;
-    background-color: white;
-}
-
-.projectDivs{
-    display: flex; 
-    /* margin-top: 10vh; */
-    /* flex-wrap: wrap; */
-}
-.projectDivs > div:not(.project) {
-    margin:auto;
-}
+.projectImg:hover .hoverText {
+    opacity: 1;
+    visibility: visible;
+    background-color: yellow;
+} */

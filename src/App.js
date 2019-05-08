@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Projects from './Components/Projects';
-import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -21,7 +20,6 @@ class App extends Component {
 
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
 
           <Footer />
 

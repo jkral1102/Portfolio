@@ -1,31 +1,34 @@
 import React, { Component } from 'react';
 import './ProjectDiv.css';
+import Github from './github.png'
 
 
 class ProjectDiv extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: this.props.id
         }
     }
-    
-    projectClicked = () => 
-    {
-        this.props.display(this.props.id)
-    }
+
 
     render() {
+        const { project } = this.props
+
         return (
-            <div className='project'>
-                <div className='projectContent'>
-                    <div className='projectName'>{this.props.name}</div>
-                    <div><img className='projectMainImg' alt='projectImg' src={this.props.img}/>
+            <div>
+                <div class='project'>
+                    <span class='projectTitle'>{project.name} </span>
+                    <div class='projectInfo'>
+                    
+                    <p>{project.info}</p>
+                    
                     </div>
+                    <a href={project.links.github} target="_blank"> <img class='githubImg' src={Github} alt='github' /> </a>
+                    <p class='tech'>{project.technology}</p>
                 </div>
-                <div className='popup'>
-                    <p className='popupText' onClick={this.projectClicked}>View</p>
-                </div>
+               
+
+
             </div>
         );
     }

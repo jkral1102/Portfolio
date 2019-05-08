@@ -5,18 +5,19 @@
 }
 
 #titleDiv{
-    flex: 3;
     text-align: left;    
     font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
+
 }
 
 #name{
     font-size: 3em;
     color: #3e89b7;
     margin-left: 30px;
+    
 }
 
-#navMenu{
+/* #navMenu{
     flex: 1;
     align-items: center;
     text-transform: uppercase;
@@ -37,7 +38,7 @@
     cursor: pointer;
     flex: 1;
     border-bottom: solid 4px rgba(0,0,0,0);
-    padding: 5px;
+    
 }
 
 #navMenu a {
@@ -52,4 +53,4 @@
 #navMenu > div:hover{
     border-bottom: solid 4px #3e89b7;
     color: white;
-}
+} */
