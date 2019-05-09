@@ -64,7 +64,7 @@ class Projects extends Component {
                 {
                     name: 'And Lastly...',
                     img: '/assets/images/portfolio.png',
-                    info: 'This Portfolio!',
+                    info: 'This Portfolio! I aimed for a simple, mobile-friendly design that is scalable for featuring many projects. Please enjoy.',
                     technology: 'React • Javascript',
                     links:
                     {
