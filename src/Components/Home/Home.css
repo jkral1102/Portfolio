@@ -6,17 +6,20 @@
     display: flex;
     width: 60vw;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 16vh;
     color: white;
 }
 
 #bioInfo {
     width: 30vw;
     margin-left: 140px;
+    font-size: 19px;
+    font-family: calibri;
+    
 }
 
 #homeTitle {
-    font-size: 30px;
+    font-size: 33px;
     font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
 }
 
@@ -54,16 +57,20 @@
 #profilePic {
     height: 180px;
     border-radius: 100%;
+    
+    -webkit-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
+-moz-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
+box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
 }
 
 .projectsTitle {
     font-size: 30px;
     color: white;
-    margin-top: 15vh;
-    margin-bottom: 40px;
+    margin-top: 18vh;
+    margin-bottom: 10vh;
     cursor: pointer;
     text-transform: uppercase;
-    font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+    
     border: solid 1px white;
     padding: 5px;
 }

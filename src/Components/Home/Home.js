@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import './Home.css';
 import Img from './profilePic.png';
 import Projects from '../Projects';
-const Scroll = require('react-scroll');
-const scroll = Scroll.animateScroll;
-
-
-
 
 class Bio extends Component {
     constructor() {
@@ -16,19 +10,8 @@ class Bio extends Component {
         }
     }
 
-      scrollTo = () => {
-        const x = $(window).height() ;
-        scroll.scrollTo(x);
-      }
-    //     // $('#App').animate({ scrollTop: $('#bioContainer').offset().top }, 'slow');
-    //   }
-
-    
-
     render() {
-        return (
-            <div >
-
+        return ([<div style={{height:'84vh'}}>
                 <div id='bio'>
                     <div><img id='profilePic' src={Img} alt='profile' /></div>
                     <div id='bioInfo'>
@@ -39,13 +22,9 @@ class Bio extends Component {
                         <p>I hold true to the principle that things can always be improved. Whether its by using better technologies, refactoring code, or even rethinking an entire app from the ground up!</p>
                     </div>
                 </div>
-                <div onClick={this.scrollTo}> 
-                <div class='projectsTitle shimmer' >Projects</div>
-          
-                <Projects />
-             
-                </div>
-            </div>
+                    <div class='projectsTitle shimmer'onClick={this.props.handleClick} >Projects</div>
+                    </div>,
+                <Projects />]
         );
     }
 }

@@ -27,7 +27,7 @@ class ProjectDiv extends Component {
                     <p class='tech'>{project.technology}</p>
                 </div>
                
-
+              
 
             </div>
         );

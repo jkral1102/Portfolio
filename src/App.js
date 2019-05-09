@@ -2,28 +2,33 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
-import Projects from './Components/Projects';
 import Footer from './Components/Footer';
+import { Scrollbars } from 'react-custom-scrollbars';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 var background = {
-  width: '100vw',
   height: "100vh"
 }
 
 class App extends Component {
+  handleClick = () => {
+    this.refs.scrollbar.view.scroll({
+      top: window.outerHeight,
+      behavior: 'smooth',
+   });
+  }
+
   render() {
     return (
       <Router>
         <div id="App" style={background}>
-          <Navbar />
+          <Scrollbars ref='scrollbar' >
+            <Navbar />
+            <Home handleClick={this.handleClick} />
+            <Footer />
 
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
-
-          <Footer />
-
-          <div id='backgroundImg'></div>
+            <div id='backgroundImg'></div>
+          </Scrollbars>
         </div>
       </Router>
     );
