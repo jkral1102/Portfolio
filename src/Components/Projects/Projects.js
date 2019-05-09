@@ -24,14 +24,14 @@ class Projects extends Component {
                 {
                     name: 'LunchLotto',
                     img: '/assets/images/lunchlotto/lotto.PNG',
-                    info: 'Allows you to form a group where members can add restaurant suggestions and selects a random restaurant. With this app, I learned a variety of fun jQuery animations along with Sequelize querying. ',
-                    technology: 'Javascript • jQuery • Sequelize • Node.js • Express.js • Postgresql • Google Location API • Yelp API',
+                    info: 'Form a group where members can add restaurant names and the app picks a random restaurant. With this app, I learned a variety of fun jQuery animations along with Sequelize querying. ',
+                    technology: 'Javascript • jQuery • Sequelize • Node.js • Express.js • Google API • Yelp API',
                     links:
                     {
                         github: 'https://github.com/jkral1102/LunchLotto.git',
                         azure: 'https://lunchlottojkral.herokuapp.com/'
                     },
-                    overlaytext: 'To use: Add a new group, a restaurant suggestion, and pick a restaurant.'
+                    overlaytext: 'To use: add a new group, a restaurant suggestion, and pick a restaurant.'
 
 
                 },
@@ -45,7 +45,7 @@ class Projects extends Component {
                         github: 'https://github.com/jkral1102/NYT-React-Search',
                         azure: 'https://nytreactsearch.azurewebsites.net/'
                     },
-                    overlaytext: 'To use: Search for, save, comment, and delete an article.'
+                    overlaytext: 'To use: search for, save, comment, and delete an article.'
 
                 },
                 {
@@ -62,7 +62,7 @@ class Projects extends Component {
 
                 },
                 {
-                    name: 'Lastly... This portfolio!',
+                    name: 'Lastly... My Portfolio!',
                     img: '/assets/images/portfolio.png',
                     info: 'I aimed for a simple, mobile-friendly design that is scalable for use with many projects.',
                     technology: 'React • Javascript',
