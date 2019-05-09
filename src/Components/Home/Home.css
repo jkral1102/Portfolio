@@ -12,7 +12,7 @@
 
 #bioInfo {
     width: 30vw;
-    margin-left: 140px;
+    margin-left: 4vw;
     font-size: 19px;
     font-family: calibri;
     
@@ -21,7 +21,35 @@
 #homeTitle {
     font-size: 33px;
     font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+    margin-bottom: 2vh;
 }
+
+#profilePic {
+    margin-top: 8vh;
+    height: 20vh;
+    border-radius: 100%;
+    
+    -webkit-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
+    box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
+}
+
+.projectsTitle {
+    font-size: 30px;
+    color: white;
+    margin-top: 18vh;
+    margin-bottom: 10vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    border: solid 1px white;
+    padding: 5px;
+}
+
+.projectsTitle:hover {
+    border: solid 1px #3e89b7;
+}
+
 
 .shimmer {
     display: inline-block;
@@ -54,27 +82,49 @@
     }
 }
 
-#profilePic {
-    height: 180px;
-    border-radius: 100%;
-    
-    -webkit-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
--moz-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
-box-shadow: 1px 1px 11px -3px rgba(0,0,0,1);
-}
 
-.projectsTitle {
-    font-size: 30px;
-    color: white;
-    margin-top: 18vh;
-    margin-bottom: 10vh;
-    cursor: pointer;
-    text-transform: uppercase;
-    
-    border: solid 1px white;
-    padding: 5px;
-}
 
-.projectsTitle:hover {
-    border: solid 1px #3e89b7;
-}
+
+@media only screen and (max-width: 600px) {
+    #bio {
+        margin: 3vh auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+      }
+      #bioInfo{
+          font-size: 12px;
+          margin-left: 0px;
+          width: 60vw;
+      }
+      #profilePic{
+          margin-top: 5vh;
+      }
+      #homeTitle {
+        margin-bottom: 2vh;
+      }
+      .projectsTitle {
+          margin-top: 5vh;
+      }
+  }
+  @media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+    #bio {
+        margin: 3vh auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+      }
+      #bioInfo{
+          font-size: 19px;
+          margin-left: 0px;
+          width: 60vw;
+      }
+      #profilePic{
+          margin-top: 5vh;
+      }
+      #homeTitle {
+        margin-bottom: 2vh;
+      }
+      .projectsTitle {
+          margin-top: 5vh;
+      }
+  }
+  

@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
 import { Scrollbars } from 'react-custom-scrollbars';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 var background = {
   height: "100vh"
@@ -26,7 +26,6 @@ class App extends Component {
             <Navbar />
             <Home handleClick={this.handleClick} />
             <Footer />
-
             <div id='backgroundImg'></div>
           </Scrollbars>
         </div>

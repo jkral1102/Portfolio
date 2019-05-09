@@ -18,7 +18,7 @@ class Projects extends Component {
                         github: 'https://github.com/jkral1102/React-Memory-Game/blob/master/README.md',
                         azure: 'http://memory.jenniferkral.com/'
                     },
-                    overlaytext: 'Click to view'
+                    overlaytext: 'Click to play the game.'
 
                 },
                 {
@@ -31,7 +31,7 @@ class Projects extends Component {
                         github: 'https://github.com/jkral1102/LunchLotto.git',
                         azure: 'https://lunchlottojkral.herokuapp.com/'
                     },
-                    overlaytext: 'Click to view'
+                    overlaytext: 'To use: Add a new group, a restaurant suggestion, and pick a restaurant.'
 
 
                 },
@@ -45,7 +45,7 @@ class Projects extends Component {
                         github: 'https://github.com/jkral1102/NYT-React-Search',
                         azure: 'https://nytreactsearch.azurewebsites.net/'
                     },
-                    overlaytext: 'Click to view'
+                    overlaytext: 'To use: Search for, save, comment, and delete an article.'
 
                 },
                 {
@@ -58,7 +58,7 @@ class Projects extends Component {
                         github: 'https://github.com/jkral1102/Redux-City-Dashboard',
                         azure: 'https://citydashboard.azurewebsites.net'
                     },
-                    overlaytext: 'Click to view'
+                    overlaytext: 'Type in a city name to get started.'
 
                 },
                 {
@@ -71,7 +71,7 @@ class Projects extends Component {
                         github: 'https://github.com/jkral1102/Portfolio',
                         azure: 'www.jenniferkral.com'
                     },
-                    overlaytext: 'Click to view'
+                    overlaytext: 'I hope you enjoyed my page!'
 
                 },
             ]

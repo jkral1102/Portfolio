@@ -15,7 +15,7 @@ class Bio extends Component {
                 <div id='bio'>
                     <div><img id='profilePic' src={Img} alt='profile' /></div>
                     <div id='bioInfo'>
-                        <span id='homeTitle' >Hello! </span>
+                        <div id='homeTitle' >Hello! </div>
 
                         <p>I am a Minneapolis based front end web developer. I develop web applications using the MERN stack (MongoDB, Express, React, and Node.js) and I am always striving to incorporate new and improved technologies.</p>
 

@@ -2,10 +2,25 @@
    width: 370px;
     height: 370px;
     object-fit: cover;
-    
-
 }
 
+@media only screen and (max-width: 600px) {
+ .projectImg{
+	 width: 250px;
+	 height: 250px;
+	object-fit: cover;
+ }
+}
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+	.projectImg{
+		width: 350px;
+		height: 350px;
+	   object-fit: cover;
+	   
+	}
+}
+
+/* Hover Text Overlay */
 .hvrbox,
 .hvrbox * {
     box-sizing: border-box;
