@@ -43,7 +43,7 @@ class Projects extends Component {
                     links:
                     {
                         github: 'https://github.com/jkral1102/NYT-React-Search',
-                        azure: 'https://nytreactsearch.azurewebsites.net/'
+                        azure: 'https://mysterious-meadow-43660.herokuapp.com/'
                     },
                     overlaytext: 'To use: search for, save, comment, and delete an article.'
 
